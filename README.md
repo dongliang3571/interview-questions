@@ -37,7 +37,8 @@ def dupChar(s):
 
 2. Find all subsequences
 
-```pythonarr = [1, 2, 3, 4]
+```python
+arr = [1, 2, 3, 4]
 
 def all_subsequence(arr):
     result = []
