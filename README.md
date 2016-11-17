@@ -18,7 +18,7 @@ interview questions I have been asked
 1. **Take a moment.** Once you get stuck, it's easy to start panicking, which guarantees that you're not going to be at your best. If you find yourself going in circles, take a step back, stop thinking about the problem, and try to relax before jumping back into it.
 2. **Don't stop talking.** Try to avoid being silent at all times in the interview. Be as chatty as you can about everything you're observing about the problem as you're working toward a solution. Talk aloud about approaches that you're thinking about, even if you think it's not correct. The interviewer generally wants to help you, but it's hard to help someone who's not talking. They can usually give you a good hint if they know exactly what you're thinking. Also, even if you don't solve the problem in the end, you'll be able to showcase your problem solving skills.
 
-## General Question
+## Behavioral Question
 
 1. Why do you pursue computer science?
 
