@@ -34,3 +34,24 @@ interview questions I have been asked
 def dupChar(s):
     
 ```
+
+2. Find all subsequences
+
+```pythonarr = [1, 2, 3, 4]
+
+def all_subsequence(arr):
+    result = []
+    mylist = []
+    length = len(arr)
+    for count in xrange(length*length):
+        for j in xrange(length):
+            if count & (1<<j):
+                mylist.append(arr[j])
+        result.append(mylist)
+        mylist = []
+
+    return result
+
+print all_subsequence(arr)
+# [[], [1], [2], [1, 2], [3], [1, 3], [2, 3], [1, 2, 3], [4], [1, 4], [2, 4], [1, 2, 4], [3, 4], [1, 3, 4], [2, 3, 4], [1, 2, 3, 4]]
+```
