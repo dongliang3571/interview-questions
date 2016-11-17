@@ -47,8 +47,69 @@ interview questions I have been asked
 1. Write a function which takes a string as parameter. The function will return true if there are duplicated characters in the string, otherwise return false.
 
 ```python
+# godd
 def dupChar(s):
+    myset = set()
+    for c in s:
+        if c in myset:  # do 'if..in..' with set only O(1), because set is implemented with hash. 
+            return True
+        myset.add(c)
+    return False
+
+# Time complexity
+# Best case: O(1)
+# Worest case: O(n)
+# Average case: O(n)
+
+
+# another good one
+def dupChar(s):
+    mydic = {}
+    for c in s:
+        if mydic.get(c) == None:
+            mydic[c] = 1;
+        else:
+            return True
+    return False
+
+
+# Time complexity
+# Best case: O(1)
+# Worest case: O(n)
+# Average case: O(n)
+
+# ok
+def dupChar(s):
+    myset = set()
+    for c in s:
+        myset.add(c)
+    return len(myset) == len(s)
+
+# problem with this is that if input is lots repeated characters,
+# it won't catch it right away, for example: "aaaaaaaaaaaaaaaaaaaaaaa"
+# program will still need to iterate through entire string to get result.
+# with best approach, it figures it out on the second character.
+
+# Time complexity
+# Best case: O(n)
+# Worest case: O(n)
+# Average case: O(n)
+
+
+# bad one
+def dupChar(s):
+    length = len(s)
+    for i in xrange(length):
+        for j in xrange(i+1, length):
+            if s[i] == s[j]:
+                return True
+    return False
     
+# Time complexity
+# Best case: O(1)
+# Worest case: O(n^2)
+# Average case: O(n^2)
+
 ```
 
 2. Find all subsequences
