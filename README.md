@@ -22,6 +22,10 @@ interview questions I have been asked
 
 1. Why do you pursue computer science?
 
+2. Where else are you applying/interviewing/considering offers?
+
+  There is absolutely no obligation for you to have to tell a company where else you are applying/interviewing/considering offers. Some companies/HR departments will ask this question, and a nice fallback answer is simply, **"I'm not comfortable sharing that information at this time."** Do not feel bad or uncomfortable for pushing back on this!
+
 ## Programming Concept
 
 1. Why do you like Python?
