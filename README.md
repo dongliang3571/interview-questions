@@ -142,45 +142,40 @@ print all_subsequence(arr)
 - **Find the first repeated word in a sentence, characters are delimiters between words: space, tab, comma(,), colon(:), semicolon(;), dash(-) and period(.)**
 
 ```python
-Sample input:
+# Sample input:
+# He had had quite enough of this nonsense.
 
-He had had quite enough of this nonsense.
-
-Sample output:
-
-had
+# Sample output:
+# had
 
 ```
 
 - **Longest subsequence of string X that is also a substring of Y(find length of longest subsequence)**
 
 ```python
-Sample input:
+# Sample input:
+# abc
+# aedace
 
-abc
-aedace
-
-Sample output:
-2
+# Sample output:
+# 2
 
 ```
 
 - **Anagram, minimum number of character need to be changed in X so that it's an anagram of string Y**
 
 ```python
-Sample output:
+# Sample output:
+# aaabbb
+# ab
+# abc
+# mnop
+# xyyx
 
-aaabbb
-ab
-abc
-mnop
-xyyx
-
-Sample output:
-
-3  # all 3 a's need to be changed to b, so it's 3
-1  # a needs to be changed to b, so it's 1
--1  # string X and Y have different length, so impossible, -1.
-2
-0
+# Sample output:
+# 3  (all 3 a's need to be changed to b, so it's 3)
+# 1  (a needs to be changed to b, so it's 1)
+# -1  (string X and Y have different length, so impossible, -1.)
+# 2
+# 0
 ```
