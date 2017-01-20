@@ -165,7 +165,7 @@ print all_subsequence(arr)
 - **Anagram, minimum number of character need to be changed in X so that it's an anagram of string Y**
 
 ```python
-# Sample output:
+# Sample input:
 # aaabbb
 # ab
 # abc
@@ -178,4 +178,30 @@ print all_subsequence(arr)
 # -1  (string X and Y have different length, so impossible, -1.)
 # 2
 # 0
+```
+
+- **Lowest conmmon multiple of n numbers**
+
+```python
+# Sample input:
+# 10
+
+# Sample output:
+# lcm(10) = 2520
+
+Explaination: 2520 is lowest common multiple of 1, 2, 3, 4, 5, 6, 7, 7, 9, 10
+
+
+# Solution:
+
+# To calculate lowest comoon multiple of two integers a and b
+# we do a*b/gcd(a, b), so we can define a function called lcm(a, b)
+# if you want to calculate more than two integers, you do lcm(lcm(a, b), c)
+
+
+from faction import gcd
+def lcm(a, b):
+  return a*b/gcd(a, b) # In Python 3, use `//` to get integer instead of floating point
+
+reduce(lcm, range(n))
 ```
