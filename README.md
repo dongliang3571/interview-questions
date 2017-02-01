@@ -205,3 +205,37 @@ def lcm(a, b):
 
 reduce(lcm, range(n))
 ```
+
+- **remove node with value greater than x**
+
+```java
+static LinkedListNode removeNodes(LinkedListNode list, int x) {
+        LinkedListNode cur;
+
+        // Check if we have to update the head of the list. We do this
+        //  when the first item in the list is greater than x.
+        while(list != null && list.val > x) {
+            list = list.next;
+        }
+
+        // If the list is empty, or we removed all items, then return
+        //  the empty list
+        if( list == null )
+            return list;
+
+        // Use cur to traverse the list
+        cur = list;
+
+        // At this point, cur.val is valid. So I need to check cur.next.val
+        while(cur.next != null) {
+            if (cur.next.val > x) {
+                cur.next = cur.next.next; // skip the node
+            } else {
+                cur = cur.next; // don't skip, just update cur
+            }
+        }
+
+        return list; // return the head of the list
+    }
+
+```
