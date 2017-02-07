@@ -239,3 +239,16 @@ static LinkedListNode removeNodes(LinkedListNode list, int x) {
     }
 
 ```
+
+
+## Questions for the interviewer
+
+- How large is your team?
+- What does your dev cycle look like? Do you do waterfall/sprints/agile?
+- Are rushes to deadlines common? Or is there flexibility?
+- How are decisions made in your team?
+- How many meetings do you have per week?
+- Do you feel your work environment helps you concentrate?
+- What are you working on?
+- What do you like about it?
+- What is the work life like?
