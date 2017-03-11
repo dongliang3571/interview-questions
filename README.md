@@ -48,15 +48,14 @@ interview questions I have been asked
 5. Singly linked list and doubly linked list.
 
   | Singly Linked List | Doubly Linked List |
-  | -------------------|--------------------|
+  | ------------------ |--------------------|
   | Singly linked list allows you to go one way direction, if you want to reversely read a singly linked list, we have to change the list struture | Doubly linked list has two way directions next and previous, if you want to reversly read a doublly linked list just read from ending node to beginning node |
-  | Singly linked list uses less memory per node (one pointer) | Doubly linked list uses More memory per node than Singly Linked list (two pointers)
- |
+  | Singly linked list uses less memory per node (one pointer) | Doubly linked list uses More memory per node than Singly Linked list (two pointers) |
   | There is a little-known trick that lets you delete from a singly-linked list in O(1), but the list must be circular for it to work (move the content of next into the current, and delete next). | Doubly-linked lists can be used in places where singly-linked lists would not work (a doubly-ended queue), but they require slightly more "housekeeping", and are slightly less efficient on insertions as the result |
   | If we know in advance that element to be searched is found near the end of the list(for example name 'Yogesh' in a telephone directory), even then singly linked list is traversed sequentially from beginning.	| In doubly linked list If we know in advance that element to be searched is found near the end of the list(for example name 'Yogesh' in a telephone directory), then the list can traversed from the end thereby saving time |
-| If we need to save memory in need to update node values frequently and searching is not required, we can use Singly Linked list.| If we need faster performance in searching and memory is not a limitation we use Doubly Linked List |
-| The first and last nodes of a doubly linked list are immediately accessible (i.e., accessible without traversal, and usually called head and tail) and therefore allow traversal of the list from the beginning or end of the list, respectively: e.g., traversing the list from beginning to end, or from end to beginning, in a search of the list for a node with specific data value. Any node of a doubly linked list, once obtained, can be used to begin a new traversal of the list, in either direction (towards beginning or end), from the given node.| ... |
-| **In a doubly linked list, one can insert or delete a node in a constant number of operations given only that node's address** | **In a singly linked list, one must have the address of the pointer to that node, which is either the handle for the whole list (in case of the first node) or the link field in the previous node.** |
+  | If we need to save memory in need to update node values frequently and searching is not required, we can use Singly Linked list.| If we need faster performance in searching and memory is not a limitation we use Doubly Linked List |
+  | | The first and last nodes of a doubly linked list are immediately accessible (i.e., accessible without traversal, and usually called head and tail) and therefore allow traversal of the list from the beginning or end of the list, respectively: e.g., traversing the list from beginning to end, or from end to beginning, in a search of the list for a node with specific data value. Any node of a doubly linked list, once obtained, can be used to begin a new traversal of the list, in either direction (towards beginning or end), from the given node. |
+  | **In a singly linked list, one must have the address of the pointer to that node, which is either the handle for the whole list (in case of the first node) or the link field in the previous node.** | **In a doubly linked list, one can insert or delete a node in a constant number of operations given only that node's address** |
 
   
   
